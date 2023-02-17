@@ -1,0 +1,16 @@
+
+provider "aws" {
+    access_key = "AKIA6PXYCKS3WRLSMSXU"
+    secret_key = "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"
+    region     = "ap-south-1"
+    }
+resource "aws_instance" "AWSServer" {
+    ami             = "ami-0e6329e222e662a52"
+    instance_type   = "t2.micro"
+    key_name        = "nov 9"
+    security_groups = ["security"]
+    tags = {
+      Name = "MyEC2-VM"
+    }
+    } 
+  
