@@ -17,5 +17,15 @@
   </dependencies>
   <build>
     <finalName>01-maven-web-app</finalName>
-  </build>
+  </build> 
+  <distributionManagement>
+    <snapshotRepository>
+        <id>jfrog-snapshots</id>
+        <url>http://13.232.161.117:8082/artifactory/maven/</url>
+      </snapshotRepository>
+      <repository>
+    <id>jfrog-releases</id> 
+     <url>http://13.232.161.117:8082/artifactory/maven/</url>
+    </repository>
+</distributionManagement>
 </project>
